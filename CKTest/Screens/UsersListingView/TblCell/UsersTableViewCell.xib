@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UsersTableViewCell" rowHeight="126" id="KGk-i7-Jjw" customClass="UsersTableViewCell" customModule="CKTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-Px-1TY" customClass="UIViewX" customModule="BusRoute_SP" customModuleProvider="target">
+                        <rect key="frame" x="20" y="15" width="408" height="111"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="xCY-Un-RZt">
+                                <rect key="frame" x="15" y="25.666666666666664" width="60" height="59.999999999999993"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xCY-Un-RZt" secondAttribute="height" id="Yfh-zA-uRc"/>
+                                    <constraint firstAttribute="width" constant="60" id="bb9-1T-lkK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="z5o-5O-tVk">
+                                <rect key="frame" x="85" y="35" width="303" height="41.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mF7-tM-4kg">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBK-q0-a7b">
+                                        <rect key="frame" x="0.0" y="24.333333333333329" width="303" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xCY-Un-RZt" firstAttribute="centerY" secondItem="q9S-Px-1TY" secondAttribute="centerY" id="5jv-bg-J7U"/>
+                            <constraint firstItem="z5o-5O-tVk" firstAttribute="leading" secondItem="xCY-Un-RZt" secondAttribute="trailing" constant="10" id="8ax-h4-ZyI"/>
+                            <constraint firstItem="z5o-5O-tVk" firstAttribute="centerY" secondItem="q9S-Px-1TY" secondAttribute="centerY" id="OVj-CX-plE"/>
+                            <constraint firstItem="xCY-Un-RZt" firstAttribute="leading" secondItem="q9S-Px-1TY" secondAttribute="leading" constant="15" id="m0v-ne-iOv"/>
+                            <constraint firstAttribute="trailing" secondItem="z5o-5O-tVk" secondAttribute="trailing" constant="20" id="t48-57-A1K"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="q9S-Px-1TY" secondAttribute="bottom" id="9YU-45-3nF"/>
+                    <constraint firstAttribute="trailing" secondItem="q9S-Px-1TY" secondAttribute="trailing" constant="20" id="BEo-WX-rF5"/>
+                    <constraint firstItem="q9S-Px-1TY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Bhb-NY-ibB"/>
+                    <constraint firstItem="q9S-Px-1TY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="I96-dC-aZy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgVwUser" destination="xCY-Un-RZt" id="wDj-iG-28I"/>
+                <outlet property="lblDetail" destination="kBK-q0-a7b" id="eHS-AR-iyb"/>
+                <outlet property="lblName" destination="mF7-tM-4kg" id="Dge-4n-Abd"/>
+            </connections>
+            <point key="canvasLocation" x="91.603053435114504" y="27.464788732394368"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ProfileImage" width="80" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
